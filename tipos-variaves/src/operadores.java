@@ -24,6 +24,41 @@ public class operadores {
     boolean variavel = true;
     System.out.println(!variavel);
     System.out.println(variavel);
+
+/*Aula 5 - comparações também podem ser feitas a nomes e objetoos, não só a números 
+* Quando fot para nomes o bjetos é legal usar "equals"
+*/
+ 
+     int numero2 = 1;
+     int numero3 = 2; 
+
+     boolean simNao = numero2 == numero3;
+     
+     if(numero2 < numero3){
+        System.out.println(("a mossa condição é verdadeira"));
+     }
+
+     System.out.println ("numeroDois é igual a numeroTres?" + simNao );
+
+     simNao = numero2 != numero3;
+     System.out.println ("numeroDois é diferente de numeroTres?" + simNao );
+
+     simNao = numero2 > numero3;
+     System.out.println ("numeroDois é maior que numeroTres?" + simNao );
+
+
+
+
+boolean condicao1=true;
+
+boolean condicao2=false;
+
+if(condicao1 || condicao2){
+    System.out.println("uma das condições é verdadeira");
+}
+
+System.out.println("fim");
+
 }
     
     }
