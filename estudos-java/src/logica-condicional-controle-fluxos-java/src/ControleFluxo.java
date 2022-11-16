@@ -26,6 +26,9 @@ public class ControleFluxo {
        switchFerias();
     }
 
+    /**
+     * 
+     */
     private static void ifFlecha() {
 
         int mes = 9;
@@ -118,6 +121,89 @@ public class ControleFluxo {
 
   private static void ifMenor() {
 
-  // Voltar aula para 05:47 minutos  
+    double salarioMensal = 11893.58d;
+        double mediaSalarial = 10500d;
+
+        int quantidadeDependente = 4;
+        int mediaDepentende = 2;
+
+        System.out.println((salarioMensal < mediaSalarial) && (quantidadeDependente >= mediaDepentende));
+
+        boolean salarioBaixo = salarioMensal < mediaSalarial;
+        boolean muitosDependentes = quantidadeDependente >= mediaDepentende;
+
+        System.out.println((salarioBaixo) && (muitosDependentes));
+
+        boolean recebeAuxilio = (salarioBaixo) && (muitosDependentes);
+        System.out.println("recebeAuxilio " + recebeAuxilio);
   }
+
+private static void witchSemana() {
+
+    String dia = "Terça";
+    switch (dia){
+        case "Segunda":
+            System.out.println(2);
+            break;
+        case "Terça":
+            System.out.println(3);
+            break;   
+        case "Quarta":
+            System.out.println(4);
+            break;
+        case "Quinta":
+            System.out.println(5);
+            break;
+        case "Sexta":
+            System.out.println(6);
+            break;
+        case "Sábado":
+            System.out.println(7);
+            break;
+        case "Domingo":
+            System.out.println(1);
+            break;
+        default:
+            System.out.println(1);
+                System.out.println("Dia inválido");
+    }
+
+}
+
+private static void switchNumero(){
+
+    int numero =4;
+    switch (numero){
+        case 1:
+        case 2:
+        case 3:
+            System.out.println("Certo");
+            break;
+        case 4:
+             System.out.println("Errado");
+             break;  
+        case 5:
+             System.out.println("Talvez");
+             break;  
+        default:
+            System.out.println("Valor Indefinido");
+            break; 
+
+    }
+}
+
+private static void switchFerias(){
+
+    String mes = "dezembro";
+    switch (mes) {
+        case "dezembro":
+        case "julho":
+        case "janeiro":
+            System.out.println("Férias");
+            break;
+        default:
+            System.out.println("Mês Indefinido");  
+            break;
+    }
+}
 }
