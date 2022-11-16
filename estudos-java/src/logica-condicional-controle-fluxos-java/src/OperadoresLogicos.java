@@ -2,12 +2,12 @@ public class OperadoresLogicos {
 
      public static void main(String[] args) {
         
-       /** Conjunção: &&  só é verdadeira quando ambos os operandos ou expressões são verdade.
+       /* Conjunção: &&  só é verdadeira quando ambos os operandos ou expressões são verdade.
          Disjunção: || operação que só é falsa quando ambos os operandos ou expressões são falsos.
         Disjunção exclusiva: ^operação que só é verdade quando ambos operandos ou expressões são opostos.
         Negação: ! operação que inverte o valor logico de um operando ou expressão.
 
-        **/
+        */
         
         boolean b1 = true;
         boolean b2 = false;
